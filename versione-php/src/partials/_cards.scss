@@ -1,0 +1,24 @@
+.card {
+    background-color: $colore_card;
+    @include proprieta_card();
+    .poster {
+        width: $dimensione_poster;
+        height: $dimensione_poster;
+        margin: auto;
+        img {
+            width: 100%;
+            border-radius: 5px;
+        }
+    }
+    .title, .author {
+        font-size: 10px;
+        white-space: nowrap;
+        overflow-x: hidden;
+    }
+    .genre, .year {
+        font-size: 10px;
+    }
+    .title, .author, .genre, .year {
+        @include proprieta_caratteri($stile_caratteri, $colore_caratteri);
+    }
+}
