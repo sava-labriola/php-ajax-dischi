@@ -1,43 +1,35 @@
-<?php
-
-include 'partials/database.php';
-
-?>
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="public/app.css">
         <title>Ajax Api Musica</title>
     </head>
     <body>
         <div class="container">
-            <?php
-            foreach ($dischi as $disco) {
-            ?>
+
+        </div>
+        <script id="song" type="text/x-handlebars-template">
             <div class="card">
                 <div class="poster">
-                    <img src="<?php echo $disco['poster'] ?>" alt="">
+                    <img src="{{image}}" alt="">
                 </div>
                 <div class="title">
-                    <h1><?php echo $disco['title'] ?></h1>
+                    <h1>{{title}}</h1>
                 </div>
                 <div class="author">
-                    <h2><?php echo $disco['author'] ?></h2>
+                    <h2>{{author}}</h2>
                 </div>
                 <div class="genre">
-                    <h3><?php echo $disco['genre'] ?></h3>
+                    <h3>{{genre}}</h3>
                 </div>
                 <div class="year">
-                    <h3><?php echo $disco['year'] ?></h3>
+                    <h3>{{year}}</h3>
                 </div>
             </div>
-            <?php
-            }
-            ?>
-        </div>
+        </script>
+        <script src="public/app.js" charset="utf-8"></script>
     </body>
 </html>

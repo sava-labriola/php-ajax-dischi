@@ -1,0 +1,13 @@
+@mixin proprieta_card () {
+    margin: 2px;
+    width: 150px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+}
+
+@mixin proprieta_caratteri ($stile, $colore) {
+    text-align: center;
+    font-family: $stile;
+    color: $colore;
+}
