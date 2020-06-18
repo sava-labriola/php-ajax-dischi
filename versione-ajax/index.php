@@ -5,7 +5,7 @@
         <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="public/app.css">
-        <title>Ajax Api Musica</title>
+        <title>Ajax-dischi</title>
     </head>
     <body>
         <div class="container">
